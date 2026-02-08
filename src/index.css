@@ -1,0 +1,106 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #ecfdf5;
+  --color-brand-100: #d1fae5;
+  --color-brand-200: #a7f3d0;
+  --color-brand-300: #6ee7b7;
+  --color-brand-400: #34d399;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-brand-700: #047857;
+  --color-brand-800: #065f46;
+  --color-brand-900: #064e3b;
+  --color-brand-950: #022c22;
+
+  --font-sans: "Poppins", "sans-serif";
+}
+
+/* Prevent horizontal overflow and fix viewport */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Improved focus states for accessibility */
+button:focus-visible, a:focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Mobile touch optimizations */
+@media (hover: none) {
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Remove tap highlight on mobile */
+html, body, div, span, button, a {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Optimize text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better image rendering */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Mobile performance optimizations */
+@media (max-width: 768px) {
+  /* Disable blur on mobile for better performance */
+  .blur-3xl, .blur-[100px], .blur-[80px] {
+    filter: none !important;
+  }
+  
+  /* Remove transitions on mobile for better performance */
+  * {
+    animation-duration: 0.15s !important;
+    transition-duration: 0.15s !important;
+  }
+  
+  /* Disable expensive animations */
+  .group-hover\:scale-150 {
+    transition: none !important;
+  }
+  
+  /* Reduce shadow effects on mobile */
+  .shadow-2xl {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+/* Use GPU acceleration for animations */
+.will-animate {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
