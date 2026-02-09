@@ -9,7 +9,7 @@ const Transformations = () => {
         {
             image: "/transformation1.webp",
             title: "Skin Transformation",
-            description: "51 KG → 56 KG | Bad Skin → Batter Skin",
+            description: "51 KG → 56 KG | Bad Skin → Better Skin",
             details: "This incredible transformation shows the power of consistent nutrition and skincare guidance. With personalized coaching, our client not only improved their physique but also achieved radiant, healthy skin.",
             benefits: ["Better Energy Levels", "Glowing Skin", "Improved Confidence", "Sustainable Results"]
         },
