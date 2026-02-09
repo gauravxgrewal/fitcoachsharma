@@ -40,11 +40,11 @@ const FAQ = () => {
         <section className="py-20 bg-gray-50">
             <div className="container mx-auto px-4 md:px-8">
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <span className="text-brand-600 font-semibold uppercase tracking-wider text-sm">Common Questions</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">
+                    <span className="text-brand-600 font-semibold uppercase tracking-wider text-xs md:text-sm">Common Questions</span>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mt-2 mb-4">
                         Frequently Asked Questions
                     </h2>
-                    <p className="text-gray-600">
+                    <p className="text-sm md:text-base text-gray-600">
                         Got questions? Here are answers to the most common ones asked by our clients.
                     </p>
                 </div>
@@ -61,10 +61,10 @@ const FAQ = () => {
                         >
                             <motion.button
                                 onClick={() => toggleAccordion(index)}
-                                className="w-full px-6 py-4 md:px-8 md:py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                                className="w-full px-4 py-3 md:px-6 md:py-4 lg:px-8 lg:py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
                                 whileHover={{ paddingLeft: 32 }}
                             >
-                                <h3 className="text-base md:text-lg font-semibold text-gray-900 pr-4">
+                                <h3 className="text-sm md:text-base lg:text-lg font-semibold text-gray-900 pr-4">
                                     {faq.question}
                                 </h3>
                                 <motion.div
@@ -101,14 +101,14 @@ const FAQ = () => {
                     viewport={{ once: true }}
                     className="text-center mt-16"
                 >
-                    <p className="text-gray-600 mb-6">Didn't find your answer?</p>
+                    <p className="text-sm md:text-base text-gray-600 mb-6">Didn't find your answer?</p>
                     <motion.a
                         href="https://wa.me/919034907539?text=Hi%20Coach%20Sharma,%20I%20have%20a%20question"
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="inline-block bg-brand-600 hover:bg-brand-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all"
+                        className="inline-block bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 md:px-8 py-2 md:py-3 rounded-full shadow-lg hover:shadow-xl transition-all text-sm md:text-base\"
                     >
                         Message on WhatsApp
                     </motion.a>

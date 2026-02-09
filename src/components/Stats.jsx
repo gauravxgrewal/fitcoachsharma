@@ -66,14 +66,14 @@ const Stats = () => {
                         viewport={{ once: true }}
                         className="lg:w-1/3"
                     >
-                        <div className="flex items-center space-x-2 text-brand-400 font-bold text-lg mb-2">
+                        <div className="flex items-center space-x-2 text-brand-400 font-bold text-sm md:text-lg mb-2">
                             <Trophy className="text-amber-400" size={24} />
                             <span>Proven Track Record</span>
                         </div>
-                        <h2 className="text-xl md:text-2xl font-bold mb-4 leading-tight text-white">
+                        <h2 className="text-lg md:text-xl lg:text-2xl font-bold mb-4 leading-tight text-white">
                             Guiding clients toward healthier lifestyles with proven strategies.
                         </h2>
-                        <p className="text-sm  text-brand-100/80 leading-relaxed">
+                        <p className="text-xs md:text-sm text-brand-100/80 leading-relaxed">
                             Decade of hands-on coaching experience, delivering results that last a lifetime.
                         </p>
                     </motion.div>
@@ -89,7 +89,7 @@ const Stats = () => {
                                 transition={{ delay: i * 0.1 }}
                                 className="bg-brand-900/50 backdrop-blur-sm border border-brand-800 p-8 rounded-2xl flex flex-col items-center justify-center text-center hover:bg-brand-800/50 transition-colors group"
                             >
-                                <span className="text-3xl md:text-4xl font-bold text-brand-400 mb-2 group-hover:scale-110 transition-transform block">
+                                <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-400 mb-2 group-hover:scale-110 transition-transform block">
                                     {isVisible ? <CounterNumber target={stat.value} isVisible={isVisible} /> : '0+'}
                                 </span>
                                 <span className="text-xs font-bold tracking-widest text-brand-200/60 uppercase">

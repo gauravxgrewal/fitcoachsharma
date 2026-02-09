@@ -42,7 +42,7 @@ const Footer = () => {
                         className="space-y-4"
                     >
                         <motion.h2 
-                            className="text-2xl font-bold cursor-pointer"
+                            className="text-lg md:text-xl font-bold cursor-pointer"
                             onClick={() => scrollToSection('top')}
                             whileHover={{ color: '#10b981' }}
                         >
@@ -60,7 +60,7 @@ const Footer = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
-                        <h3 className="text-lg font-bold mb-6">Quick Links</h3>
+                        <h3 className="text-base md:text-lg font-bold mb-6">Quick Links</h3>
                         <ul className="space-y-3">
                             {quickLinks.map((link) => (
                                 <li key={link.name}>
@@ -83,7 +83,7 @@ const Footer = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                     >
-                        <h3 className="text-lg font-bold mb-6">Contact Us</h3>
+                        <h3 className="text-base md:text-lg font-bold mb-6">Contact Us</h3>
                         <ul className="space-y-4">
                             <li>
                                 <motion.a 
@@ -127,7 +127,7 @@ const Footer = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
                     >
-                        <h3 className="text-lg font-bold mb-6">Follow Me</h3>
+                        <h3 className="text-base md:text-lg font-bold mb-6">Follow Me</h3>
                         <div className="flex space-x-4">
                             {socialLinks.map((social, index) => {
                                 const Icon = social.icon;

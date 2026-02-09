@@ -41,8 +41,8 @@ const Services = () => {
         <section id="services" className="py-20 bg-white">
             <div className="container mx-auto px-4 md:px-8">
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How I Can Help You</h2>
-                    <p className="text-gray-600">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">How I Can Help You</h2>
+                    <p className="text-sm md:text-base text-gray-600">
                         Expert guidance to help you reach your peak potential.
                     </p>
                 </div>
@@ -60,24 +60,24 @@ const Services = () => {
                         >
                             <div className="absolute top-0 right-0 w-24 h-24 bg-linear-to-br from-brand-500/10 to-transparent rounded-full md:-mr-8 md:-mt-8 group-hover:scale-150 transition-transform"></div>
                             
-                            <div className='flex gap-5 justify-start items-center mb-4'>
+                            <div className='flex gap-4 md:gap-5 justify-start items-center mb-4'>
                                 <motion.div 
-                                    className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform`}
+                                    className={`w-14 md:w-16 h-14 md:h-16 ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform`}
                                     whileHover={{ rotate: 5 }}
                                 >
                                     {service.icon}
                                 </motion.div>
-                                <h3 className="text-lg font-bold text-gray-900">{service.title}</h3>
+                                <h3 className="text-base md:text-lg font-bold text-gray-900">{service.title}</h3>
                             </div>
                             
-                            <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                            <p className="text-xs md:text-sm text-gray-600 leading-relaxed mb-6">
                                 {service.desc}
                             </p>
 
                             <motion.button
                                 onClick={scrollToForm}
                                 whileHover={{ x: 4 }}
-                                className="inline-flex items-center gap-2 text-brand-600 font-semibold text-sm hover:text-brand-700 transition-colors"
+                                className="inline-flex items-center gap-2 text-brand-600 font-semibold text-xs md:text-sm hover:text-brand-700 transition-colors"
                             >
                                 Learn More <ArrowRight size={16} />
                             </motion.button>

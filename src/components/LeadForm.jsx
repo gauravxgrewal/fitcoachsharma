@@ -100,7 +100,7 @@ Please guide me.`;
 
                 {/* Context Text - Left Side */}
                 <div className="md:w-1/2 text-left space-y-8">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 text-green-700 font-medium text-sm border border-green-200">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-2 rounded-full bg-green-100 text-green-700 font-medium text-xs md:text-sm border border-green-200">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
@@ -108,13 +108,13 @@ Please guide me.`;
                         Free Consultation
                     </div>
 
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-[1.15]">
+                    <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-gray-900 leading-[1.15]">
                         Lose Weight.<br />
                         Fix Your Diet.<br />
                         <span className="text-brand-600">Without Starving.</span>
                     </h2>
 
-                    <p className="text-m md:text-lg text-gray-600 leading-relaxed max-w-lg">
+                    <p className="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed max-w-lg">
                         Personal nutrition guidance for busy people who want real, sustainable results — no crash diets, no nonsense.
                     </p>
 
@@ -124,7 +124,7 @@ Please guide me.`;
                             "7+ years of experience",
                             "Indian food focused plans"
                         ].map((item, i) => (
-                            <div key={i} className="flex items-center space-x-3 text-gray-800 font-medium text-m">
+                            <div className="flex items-center space-x-3 text-gray-800 font-medium text-xs md:text-sm">
                                 <div className="bg-brand-100 p-1 rounded-full text-brand-600">
                                     <CheckCircle2 size={20} strokeWidth={3} />
                                 </div>
@@ -143,7 +143,7 @@ Please guide me.`;
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0.95 }}
                             transition={{ duration: 0.5 }}
-                            className="bg-white p-8 md:p-10 rounded-4xl shadow-2xl border border-gray-100 max-w-md w-full relative z-20"
+                            className="bg-white p-6 md:p-8 lg:p-10 rounded-4xl shadow-2xl border border-gray-100 max-w-md w-full relative z-20"
                         >
                             <div className="mb-6">
                                 <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Name</label>
@@ -153,7 +153,7 @@ Please guide me.`;
                                         name="name"
                                         value={formData.name}
                                         onChange={handleNameChange}
-                                        className="w-full px-4 py-3.5 bg-gray-50 rounded-xl border border-gray-100 focus:bg-white focus:border-brand-500 focus:ring-4 focus:ring-brand-50 outline-none transition-all placeholder-gray-400 text-gray-900"
+                                        className="w-full px-3 md:px-4 py-2 md:py-3.5 bg-gray-50 rounded-xl border border-gray-100 focus:bg-white focus:border-brand-500 focus:ring-4 focus:ring-brand-50 outline-none transition-all placeholder-gray-400 text-sm md:text-base text-gray-900"
                                         placeholder="Your name"
                                     />
                                     {formData.name && (
@@ -167,14 +167,14 @@ Please guide me.`;
                             <div className="mb-6">
                                 <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Whatsapp Number</label>
                                 <div className="relative">
-                                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 font-bold">+91</div>
+                                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 font-bold text-sm md:text-base">+91</div>
                                     <input
                                         type="tel"
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handlePhoneChange}
                                         maxLength={10}
-                                        className={`w-full pl-14 pr-4 py-3.5 bg-gray-50 rounded-xl border transition-all outline-none focus:bg-white focus:ring-4 ${
+                                        className={`w-full pl-14 pr-4 py-2 md:py-3.5 bg-gray-50 rounded-xl border transition-all outline-none focus:bg-white focus:ring-4 text-sm md:text-base ${
                                             error && formData.phone
                                                 ? 'border-red-500 bg-red-50 focus:border-red-500 focus:ring-red-50'
                                                 : isPhoneValid
@@ -205,7 +205,7 @@ Please guide me.`;
                                     name="goal"
                                     value={formData.goal}
                                     onChange={handleGoalChange}
-                                    className="w-full px-4 py-3.5 bg-gray-50 rounded-xl border border-gray-100 focus:bg-white focus:border-brand-500 focus:ring-4 focus:ring-brand-50 outline-none transition-all placeholder-gray-400 text-gray-900 resize-none h-28"
+                                    className="w-full px-3 md:px-4 py-2 md:py-3.5 bg-gray-50 rounded-xl border border-gray-100 focus:bg-white focus:border-brand-500 focus:ring-4 focus:ring-brand-50 outline-none transition-all placeholder-gray-400 text-sm md:text-base text-gray-900 resize-none h-24 md:h-28"
                                     placeholder="Weight loss / PCOS / muscle gain / diabetes"
                                 ></textarea>
                             </div>
@@ -216,7 +216,7 @@ Please guide me.`;
                                 disabled={!formData.name || !isPhoneValid}
                                 whileHover={!formData.name || !isPhoneValid ? {} : { scale: 1.02 }}
                                 whileTap={!formData.name || !isPhoneValid ? {} : { scale: 0.98 }}
-                                className={`w-full font-bold py-4 md:py-4 rounded-xl shadow-xl transition-all flex items-center justify-center gap-2 group cursor-pointer text-base md:text-base ${
+                                className={`w-full font-bold py-3 md:py-4 rounded-xl shadow-xl transition-all flex items-center justify-center gap-2 group cursor-pointer text-sm md:text-base ${
                                     !formData.name || !isPhoneValid
                                         ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
                                         : 'bg-gray-900 hover:bg-brand-600 text-white hover:shadow-2xl transform hover:-translate-y-1'
@@ -232,7 +232,7 @@ Please guide me.`;
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0.95 }}
-                            className="bg-white p-8 md:p-10 rounded-4xl shadow-2xl border border-gray-100 max-w-md w-full relative z-20 flex flex-col items-center justify-center min-h-100"
+                            className="bg-white p-6 md:p-8 lg:p-10 rounded-4xl shadow-2xl border border-gray-100 max-w-md w-full relative z-20 flex flex-col items-center justify-center min-h-100"
                         >
                             <motion.div
                                 initial={{ scale: 0 }}
@@ -242,8 +242,8 @@ Please guide me.`;
                             >
                                 <Check size={40} className="text-green-600" strokeWidth={3} />
                             </motion.div>
-                            <h3 className="text-2xl font-bold text-gray-900 text-center mb-2">Perfect!</h3>
-                            <p className="text-gray-600 text-center">
+                            <h3 className="text-xl md:text-2xl font-bold text-gray-900 text-center mb-2">Perfect!</h3>
+                            <p className="text-sm md:text-base text-gray-600 text-center">
                                 Opening WhatsApp to connect you with Coach Sharma. He'll reach out shortly with a personalized plan.
                             </p>
                         </motion.div>

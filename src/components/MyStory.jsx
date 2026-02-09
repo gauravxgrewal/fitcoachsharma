@@ -7,8 +7,8 @@ const MyStory = () => {
         <section id="story" className="py-20 bg-brand-50">
             <div className="container mx-auto px-4 md:px-8">
                 <div className="text-center mb-16">
-                    <span className="text-brand-600 font-semibold uppercase tracking-wider text-sm">Valid Results</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Real Stories, Real Transformation</h2>
+                    <span className="text-brand-600 font-semibold uppercase tracking-wider text-xs md:text-sm">Valid Results</span>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mt-2">Real Stories, Real Transformation</h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -19,10 +19,10 @@ const MyStory = () => {
                         viewport={{ once: true }}
                         className="space-y-6"
                     >
-                        <h3 className="text-2xl font-bold text-gray-800">
+                        <h3 className="text-xl md:text-2xl font-bold text-gray-800">
                             "We practice what we preach."
                         </h3>
-                        <p className="text-gray-600 leading-relaxed text-lg">
+                        <p className="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed">
                             Health is a journey, not a destination. My own transformation journey taught me that discipline and the right guidance are the keys to success.
                         </p>
 
@@ -38,8 +38,8 @@ const MyStory = () => {
                                     <Trophy size={24} />
                                 </motion.div>
                                 <div>
-                                    <h4 className="font-bold text-gray-900 text-lg">My Transformation</h4>
-                                    <p className="text-gray-700 mt-1">
+                                    <h4 className="font-bold text-gray-900 text-base md:text-lg">My Transformation</h4>
+                                    <p className="text-gray-700 text-sm md:text-base mt-1">
                                         I lost <span className="font-bold text-brand-700">6 KG Fat</span> while maintaining muscle mass.
                                     </p>
                                 </div>
@@ -58,8 +58,8 @@ const MyStory = () => {
                                     <Heart size={24} />
                                 </motion.div>
                                 <div>
-                                    <h4 className="font-bold text-gray-900 text-lg">My Wife's Journey</h4>
-                                    <p className="text-gray-700 mt-1">
+                                    <h4 className="font-bold text-gray-900 text-base md:text-lg">My Wife's Journey</h4>
+                                    <p className="text-gray-700 text-sm md:text-base mt-1">
                                         She gained <span className="font-bold text-blue-700">4 KG Healthy Weight</span> with a balanced approach.
                                     </p>
                                 </div>

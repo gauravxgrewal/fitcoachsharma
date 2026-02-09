@@ -69,7 +69,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4 md:px-20 flex justify-between items-center">
           {/* Logo */}
           <div
-            className="text-xl font-bold tracking-tight text-brand-900 cursor-pointer hover:text-brand-600 transition-colors"
+            className="text-lg md:text-xl font-bold tracking-tight text-brand-900 cursor-pointer hover:text-brand-600 transition-colors"
             onClick={() => scrollToSection('top')}
           >
             Fit Coach <span className="text-brand-600">Sharma</span>
@@ -81,7 +81,7 @@ const Navbar = () => {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.id)}
-                className={`font-medium transition-all cursor-pointer relative pb-1 ${
+                className={`font-medium text-sm md:text-base transition-all cursor-pointer relative pb-1 ${
                   activeSection === link.id
                     ? 'text-brand-600 font-semibold'
                     : 'text-gray-600 hover:text-brand-600'
@@ -101,7 +101,7 @@ const Navbar = () => {
             ))}
             <button
               onClick={() => scrollToSection('contact-form')}
-              className="bg-brand-600 hover:bg-brand-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-brand-500/30 cursor-pointer transform hover:-translate-y-0.5"
+              className="bg-brand-600 hover:bg-brand-700 text-white px-5 md:px-6 py-2 md:py-2.5 rounded-full font-semibold text-sm md:text-base transition-all shadow-lg hover:shadow-brand-500/30 cursor-pointer transform hover:-translate-y-0.5"
             >
               Get Started
             </button>
@@ -128,7 +128,7 @@ const Navbar = () => {
                   <button
                     key={link.name}
                     onClick={() => scrollToSection(link.id)}
-                    className={`block w-full text-left font-medium text-base px-4 py-3 rounded-lg transition-colors ${
+                    className={`block w-full text-left font-medium text-sm md:text-base px-4 py-3 rounded-lg transition-colors ${
                       activeSection === link.id
                         ? 'text-brand-600 font-bold bg-brand-50'
                         : 'text-gray-800 hover:text-brand-600 hover:bg-gray-50'
@@ -139,7 +139,7 @@ const Navbar = () => {
                 ))}
                 <button
                   onClick={() => scrollToSection('contact-form')}
-                  className="w-full bg-brand-600 text-white py-4 rounded-xl font-bold mt-6 shadow-md hover:bg-brand-700 transition-colors text-base"
+                  className="w-full bg-brand-600 text-white py-3 md:py-4 rounded-xl font-bold mt-6 shadow-md hover:bg-brand-700 transition-colors text-sm md:text-base"
                 >
                   Get Started
                 </button>

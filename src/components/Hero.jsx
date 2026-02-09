@@ -70,12 +70,12 @@ const Hero = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 font-semibold text-sm mb-6 border border-brand-200">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-2 rounded-full bg-brand-100 text-brand-700 font-semibold text-xs md:text-sm mb-4 md:mb-6 border border-brand-200">
                                 <Wrench size={14} className="fill-brand-700" />
                                 Built for Real Life
                             </div>
 
-                            <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 leading-[1.1] tracking-tight">
+                            <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1] tracking-tight">
                                 Your Body Isn't <br />
                                 the Problem. <br />
                                 <span className="text-brand-500">
@@ -88,7 +88,7 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1, duration: 0.5 }}
-                            className="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed"
+                            className="text-sm md:text-base lg:text-lg text-gray-600 max-w-lg leading-relaxed"
                         >
                             Most people don't fail fitness — they follow plans that were never designed for real schedules, real stress, and real life. This one is.
                         </motion.p>
