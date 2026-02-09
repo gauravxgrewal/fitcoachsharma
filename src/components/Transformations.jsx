@@ -7,14 +7,14 @@ const Transformations = () => {
 
     const transformations = [
         {
-            image: "/transformation1.jpg",
+            image: "/transformation1.png",
             title: "Skin Transformation",
             description: "51 KG → 56 KG | Bad Skin → Batter Skin",
             details: "This incredible transformation shows the power of consistent nutrition and skincare guidance. With personalized coaching, our client not only improved their physique but also achieved radiant, healthy skin.",
             benefits: ["Better Energy Levels", "Glowing Skin", "Improved Confidence", "Sustainable Results"]
         },
         {
-            image: "/transformation2.jpg",
+            image: "/transformation2.png",
             title: "Muscle Transformation",
             description: "Complete body transformation with proper training and nutrition",
             details: "Through dedicated training programs and customized nutrition plans, our client achieved an impressive muscle transformation. The combination of strength training and proper diet created lasting results.",
