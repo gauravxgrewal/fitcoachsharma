@@ -7,14 +7,14 @@ const Transformations = () => {
 
     const transformations = [
         {
-            image: "/transformation1.png",
+            image: "/transformation1.webp",
             title: "Skin Transformation",
             description: "51 KG → 56 KG | Bad Skin → Batter Skin",
             details: "This incredible transformation shows the power of consistent nutrition and skincare guidance. With personalized coaching, our client not only improved their physique but also achieved radiant, healthy skin.",
             benefits: ["Better Energy Levels", "Glowing Skin", "Improved Confidence", "Sustainable Results"]
         },
         {
-            image: "/transformation2.png",
+            image: "/transformation2.webp",
             title: "Muscle Transformation",
             description: "Complete body transformation with proper training and nutrition",
             details: "Through dedicated training programs and customized nutrition plans, our client achieved an impressive muscle transformation. The combination of strength training and proper diet created lasting results.",
@@ -62,7 +62,8 @@ const Transformations = () => {
                                         <img
                                             src={transformations[activeIndex].image}
                                             alt={transformations[activeIndex].title}
-                                            className="w-full md:w-80 lg:w-full h-auto object-cover rounded-2xl"
+                                            className="w-full md:w-80 lg:w-full h-auto object-cover rounded-2xl "
+                                             loading="lazy"
                                         />
                                     </div>
 

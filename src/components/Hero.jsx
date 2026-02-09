@@ -118,8 +118,9 @@ const Hero = () => {
                             {/* Image Aspect Ratio Container */}
                             <div className="aspect-4/5 md:aspect-square w-full relative group">
                                 <img
-                                    src="/hero.png"
+                                    src="/hero.webp"
                                     alt="Deepak Kumar Coach"
+                                     loading="lazy"
                                     className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                                 />
 
