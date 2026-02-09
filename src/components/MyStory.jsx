@@ -101,7 +101,7 @@ const MyStory = () => {
                             className="absolute inset-0 flex items-center justify-center text-gray-500 font-medium group-hover:opacity-90 transition-opacity"
                             whileHover={{ scale: 1.05 }}
                         >
-                           <img src="/transform.png" className="object-cover w-full h-full transition-transform group-hover:scale-110 duration-500" />
+                           <img src="/couple.png" className="object-cover w-full h-full transition-transform group-hover:scale-110 duration-500" />
                         </motion.div>
                     </motion.div>
                 </div>

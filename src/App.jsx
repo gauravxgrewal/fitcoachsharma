@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import MyStory from './components/MyStory';
 import Services from './components/Services';
-import Testimonials from './components/Testimonials';
+import Transformations from './components/Transformations';
 import FAQ from './components/FAQ';
 import LeadForm from './components/LeadForm';
 import Footer from './components/Footer';
@@ -23,7 +23,7 @@ function App() {
         <Stats />
         <MyStory />
         <Services />
-        <Testimonials />
+        <Transformations />
         <FAQ />
         <LeadForm />
         <Footer />

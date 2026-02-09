@@ -56,7 +56,7 @@ const Services = () => {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                            className={`bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition-all border border-gray-100 ${service.borderColor} group overflow-hidden`}
+                            className={`bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition-all border ${service.borderColor} group overflow-hidden`}
                         >
                             <div className="absolute top-0 right-0 w-24 h-24 bg-linear-to-br from-brand-500/10 to-transparent rounded-full md:-mr-8 md:-mt-8 group-hover:scale-150 transition-transform"></div>
                             
